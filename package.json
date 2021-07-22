@@ -1,0 +1,28 @@
+{
+  "name": "sistemaclinico_grupo07",
+  "type": "module",
+  "version": "1.0.0",
+  "description": "Trabajo Práctico Final de la materia Taller de Programación 2. Curso 2°1°B. Profesor: Mariano Aquino. Grupo: 07",
+  "main": "main.js",
+  "scripts": {
+    "start": "nodemon src/main.js",
+    "test-cli": "node test/compartidos/servidor/cliente.test.js",
+    "test-sv": "node test/compartidos/servidor/server.test.js",
+    "test-cu_descargar": "node test/historiasclinicas/negocio/CU_DescargarHistoriaClinica.test.js",
+    "test-cu_resCan": "node test/turnos/negocio/CU_ResCanTurno.test.js",
+    "test-cu_recordatorio": "node test/turnos/negocio/CU_EnviarRecordatorio.test.js"
+  },
+  "author": "Arbio Nicolás Gabriel, Gao Alan, Pisterman Ariel, Puppo Federico",
+  "license": "ISC",
+  "dependencies": {
+    "axios": "^0.21.1",
+    "dotenv": "^10.0.0",
+    "express": "^4.17.1",
+    "mongodb": "^3.6.9",
+    "nodemailer": "^6.6.1",
+    "nodemon": "^2.0.7",
+    "pdfkit": "^0.12.1",
+    "cron-time-generator": "^1.2.0",
+    "node-schedule": "^2.0.0"
+  }
+}
