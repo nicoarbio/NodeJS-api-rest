@@ -1,4 +1,4 @@
-# Sistema clínico - API REST (Node.JS)
+# Clinical System - API REST (Node.JS)
 
 Hi! This is the spanish version of the project.
 
