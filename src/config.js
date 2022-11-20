@@ -22,35 +22,35 @@ const TRANSPORTER_SETTINGS = {
     }
 }
 
-const TAM_HOJA = 'A4'
-const TIPOGRAFIA = 'Courier'
+const SHEET_SIZE = 'A4'
+const TYPOGRAPHY = 'Courier'
 
-const RUTA = {
-    historiasClinicas: {
+const ROUTE = {
+    ClinicalHistories: {
         endpoint: {
-            datos: '/api/historiasClinicas',
-            archivos: '/api/historiasClinicas/descargar',
+            data: '/api/historiasClinicas',
+            files: '/api/historiasClinicas/descargar',
         },
-        archivosServidor: 'src/historiasClinicas/persistencia/files/'
+        serverFiles: 'src/historiasClinicas/persistencia/files/'
     },
-    turnos: {
+    appointments: {
         endpoint: {
-            datos: '/api/turnos'
+            data: '/api/turnos'
         }
     }
 }
 
 const MAX_DIGIT_DNI = 8
 
-const FRECUENCIA_RECORDATORIO = 1000 * 60 * 60 * 24 * 1 // un día en milisegundos
+const REMINDER_FREQUENCY = 1000 * 60 * 60 * 24 * 1 // a day in miliseconds
 
-const CRON_PERIODICIDAD = '5 * * * *' //corre cada 5 minutos
-//const CRON_PERIODICIDAD = cronTime.everyDay()
+const CRON_PERIODICITY = '5 * * * *' //runs every 5 mins
+//const CRON_PERIODICITY = cronTime.everyDay()
 
 const COLLECTIONS = {
-    PACIENTES: 'pacientes',
-    MEDICOS: 'medicos',
-    TURNOS: 'turnos'
+    PATIENTS: 'patients',
+    DOCTORS: 'doctors',
+    APPOINTMENTS: 'appointments'
 }
 
 const DATABASE_NAME = 'PruebaMongo'
@@ -65,11 +65,11 @@ export {
     MAX_DIGIT_DNI,
     TRANSPORTER_SETTINGS,
     PORT,
-    TAM_HOJA,
-    TIPOGRAFIA,
-    FRECUENCIA_RECORDATORIO,
-    CRON_PERIODICIDAD,
+    SHEET_SIZE,
+    TYPOGRAPHY,
+    REMINDER_FREQUENCY,
+    CRON_PERIODICITY,
     URL,
-    RUTA,
+    ROUTE,
     COLLECTIONS
 }
